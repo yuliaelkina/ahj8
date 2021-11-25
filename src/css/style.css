@@ -1,0 +1,183 @@
+body {
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.helpdesk__container {
+  background-color: rgb(245, 189, 137);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.helpdesk__new {
+  align-self: flex-end;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.helpdesk__new:hover {
+  border-width: 2px;
+}
+
+.task__list {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #fff;
+}
+
+.task__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 5px;
+  border-bottom: none;
+}
+.task__item:last-child {
+  border-bottom: 1px solid #000;
+}
+
+.task__main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task__left {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.task__checker {
+  box-sizing: border-box;
+  height: 30px;
+  width: 30px;
+  border-radius: 100px;
+  background-color: #fff;
+  border: 1px solid black;
+}
+
+.task__checker:hover {
+  border-width: 3px;
+}
+
+.task__checker__checked {
+  background-size: cover;
+  background-position: center;
+  background-image: url(./../img/kisspng-check-mark-symbol-clip-art-black-check-mark-5b13a571e7b721.5616987915280141939491.png);
+}
+
+.task__title {
+  padding-left: 10px;
+  width: 75%;
+}
+
+.task__buttons {
+  justify-self: flex-end;
+  display: flex;
+}
+
+.task__change {
+  height: 30px;
+  width: 30px;
+  border: 1px solid black;
+  border-radius: 100px;
+  margin-right: 15px;
+}
+
+.task__change:hover {
+  border-width: 3px;
+}
+
+.task__delete {
+  height: 30px;
+  width: 30px;
+  border: 1px solid black;
+  border-radius: 100px;
+  background-color: chocolate;
+  text-align: center;
+}
+
+.task__delete:hover {
+  border-width: 3px;
+}
+
+.task__description {
+  margin-left: 40px;
+  width: 70%;
+}
+
+.modal {
+  width: 55%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 30px;
+  background-color: rgb(250, 237, 223);
+}
+
+.modal__title {
+  text-align: center;
+}
+
+.modal__input--name {
+  margin-bottom: 10px;
+}
+
+.modal__input {
+  margin-bottom: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 100%;
+  padding: 5px;
+}
+
+.modal__buttons {
+  text-align: end;
+}
+
+.modal__button {
+  padding: 5px 15px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-left: 20px;
+}
+
+.modal__button:hover {
+  border: 2px solid black;
+}
+.modal--newtask {
+  display: none;
+}
+
+.modal--change {
+  display: none;
+}
+
+.modal--delete {
+  display: none;
+  width: 50%;
+}
+
+.modal--delete__text {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
