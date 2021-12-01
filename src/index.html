@@ -10,58 +10,30 @@
   <div class="helpdesk__container">
     <button type="button" class="helpdesk__new">Добавить тикет</button>
     <ul class="task__list">
-      <li class="task__item">
-        <div class="task__main">
-          <div class="task__left">
-            <div class="task__checker"></div>
-            <div class="task__title">Поменять краску в принтере №12</div>
-            <div class="task__time">12:30 22.11.11</div>
-        </div>
-          <div class="task__buttons">
-            <button type="button" class="task__change">&#9998</button>
-            <button type="button" class="task__delete">X</button>
-          </div>
-        </div>
-        <div class="task__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi provident dolorem, corporis laboriosam non natus, ab quia delectus facilis earum quasi perspiciatis fugit quisquam adipisci qui modi minus sapiente libero nobis ex eum illo inventore et. Provident esse consequatur ut iusto ullam praesentium dolores culpa? Hic ipsam a aliquid dicta consectetur in laboriosam sint, alias laborum natus autem quis ad recusandae consequatur. Provident illo suscipit, corrupti, quos beatae dolorum possimus non fugit similique eos nisi labore nam voluptas maxime id.</div>
-      </li>
-      <li class="task__item">
-        <div class="task__main">
-          <div class="task__left">
-            <div class="task__checker"></div>
-            <div class="task__title">Установить обновления системы</div>
-            <div class="task__time">12:30 22.11.11</div>
-        </div>
-          <div class="task__buttons">
-            <button type="button" class="task__change">&#9998</button>
-            <button type="button" class="task__delete">X</button>
-          </div>
-        </div>
-        <div class="task__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi provident dolorem, corporis laboriosam non natus, ab quia delectus facilis earum quasi perspiciatis fugit quisquam adipisci qui modi minus sapiente libero nobis ex eum illo inventore et. Provident esse consequatur ut iusto ullam praesentium dolores culpa? Hic ipsam a aliquid dicta consectetur in laboriosam sint, alias laborum natus autem quis ad recusandae consequatur. Provident illo suscipit, corrupti, quos beatae dolorum possimus non fugit similique eos nisi labore nam voluptas maxime id.</div>
-      </li>
     </ul>
     <div class="modal modal--newtask">
       <h2 class="modal__title">Добавить тикет</h2>
-      <form class="modal__form">
+      <form class="modal__form modal__form--add">
         <div class="modal__input--name">Краткое описание</div>
         <input type="text" class="modal__input modal--newtask__input--short">
         <div class="modal__input--name">Подробное описание</div>
         <input type="text" class="modal__input modal--newtask__input--long">
         <div class="modal__buttons modal--newtask__buttons">
           <button class="modal__button modal--newtask__button--cancel">Отмена</button>
-          <button class="modal__button modal--newtask__button--enter">Ок</button>
+          <button type="submit" class="modal__button modal--newtask__button--enter">Ок</button>
         </div>
       </form>
     </div>
     <div class="modal modal--change">
       <h2 class="modal__title">Изменить тикет</h2>
-      <form class="modal__form">
+      <form class="modal__form modal__form--change">
         <div class="modal__input--name">Краткое описание</div>
         <input type="text" class="modal__input modal--change__input--short">
         <div class="modal__input--name">Подробное описание</div>
         <input type="text" class="modal__input modal--change__input--long">
         <div class="modal__buttons modal--change__buttons">
           <button class="modal__button modal--change__button--cancel">Отмена</button>
-          <button class="modal__button modal--change__button--enter">Ок</button>
+          <button type="submit" class="modal__button modal--change__button--enter">Ок</button>
         </div>
       </form>
     </div>
