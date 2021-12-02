@@ -1,12 +1,12 @@
 {
-  "name": "hw7",
+  "name": "hw8",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "lint": "eslint . --fix",
+    "lint": "eslint .",
     "test": "jest --passWithNoTests",
     "coverage": "jest --coverage",
     "doc": "jsdoc -c jsdoc.conf.json",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yuliaelkina/ahj7.git"
+    "url": "git+https://github.com/yuliaelkina/ahj8.git"
   },
   "author": "",
   "license": "ISC",
@@ -53,7 +53,7 @@
     "webpack-merge": "^5.8.0"
   },
   "bugs": {
-    "url": "https://github.com/yuliaelkina/ahj7/issues"
+    "url": "https://github.com/yuliaelkina/ahj8/issues"
   },
-  "homepage": "https://github.com/yuliaelkina/ahj7#readme"
+  "homepage": "https://github.com/yuliaelkina/ahj8#readme"
 }
