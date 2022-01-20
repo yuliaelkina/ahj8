@@ -17,11 +17,11 @@ messageForm.addEventListener('submit', (e) => {
       ${messageForm.querySelector('.message__input').value}
       <div class="message__coord">${coordinates}</div>`;
       messageList.appendChild(newMessage);
-      messageForm.querySelector('.message__input').value = "";
+      messageForm.querySelector('.message__input').value = '';
     }, () => {
       coordinateModal.classList.add('coordinate__modal--display');
-      coordinateForm.addEventListener('submit', (e) => {
-        e.preventDefault();
+      coordinateForm.addEventListener('submit', (ev) => {
+        ev.preventDefault();
         newMessage.innerHTML = `<div class="message__date">${now.getDay()}.${now.getMonth()}.${now.getFullYear()} ${now.getHours()}:${now.getMinutes()}</div>
           ${messageForm.querySelector('.message__input').value}
           <div class="message__coord">${coordinateForm.querySelector('.coordinate__input').value}</div>`;
@@ -30,13 +30,13 @@ messageForm.addEventListener('submit', (e) => {
         messageForm.querySelector('.message__input').value = '';
         coordinateForm.querySelector('.coordinate__input').value = '';
         newMessage = '';
-      })
-    })
+      });
+    });
     return;
   }
   coordinateModal.classList.add('coordinate__modal--display');
-  coordinateForm.addEventListener('submit', (e) => {
-    e.preventDefault();
+  coordinateForm.addEventListener('submit', (evt) => {
+    evt.preventDefault();
     newMessage.innerHTML = `<div class="message__date">${now.getDay()}.${now.getMonth()}.${now.getFullYear()} ${now.getHours()}:${now.getMinutes()}</div>
       ${messageForm.querySelector('.message__input').value}
       <div class="message__coord">${coordinateForm.querySelector('.coordinate__input').value}</div>`;
