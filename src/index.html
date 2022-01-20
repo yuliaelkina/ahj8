@@ -8,9 +8,26 @@
 </head>
 <body>
   <div class="container">
-    <button class="banner__button">Collapse</button>
-    <div class="banner__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nam, facilis, soluta vel eligendi quam necessitatibus hic saepe sit rem minus perferendis minima iste tempora sint in. Nisi ipsa eligendi earum deserunt voluptates hic debitis neque vero dicta harum quis, illum labore expedita quas odio quisquam, dignissimos voluptatibus? Autem neque facilis alias nobis sunt vero inventore soluta maiores quod! Assumenda, harum possimus quibusdam ab facere recusandae corporis quidem fuga animi, suscipit ea rem officia quae nihil alias quo earum maxime eius, molestiae ducimus ipsa odit iure est. Dolores aliquam quasi eos. Cum molestias sint nostrum voluptatum tenetur repudiandae asperiores fugiat.</div>
-    <div class="static__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi perferendis, corrupti unde laborum itaque voluptas non ad quaerat. Saepe iste quos ullam aut illo ipsa porro accusamus optio maxime quasi?</div>
+    <ul class="message__list">
+      <li class="message__item">
+        <div class="message__date">12.11.21 09:30</div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima obcaecati veniam illo repellendus accusamus aperiam laboriosam cumque ducimus vitae! Delectus necessitatibus autem suscipit tenetur? Optio, nulla non. Sed ut, laudantium harum, nesciunt odit quos nisi exercitationem ea repudiandae quidem, incidunt et! Alias nemo ad iusto mollitia at tempora totam, ipsum quisquam ducimus, excepturi fugit culpa minus hic molestiae! Dicta, praesentium.
+        <div class="message__coord">51.50851, −0.12572</div>
+      </li>
+    </ul>
+    <form class="message__form">
+      <input type="text" class="message__input">
+    </form>
+  </div>
+  <div class="coordinate__modal">
+    <div class="coordinate__text">
+      <p>Что-то пошло не так.</p>
+      <p>К сожалению, нам не удалось определить Ваше местоположение. Пожалуйста, дайте разрешение на определение вашей геопозиции или введите координаты вручную.</p>
+      <p>Широта и долгота через запятую</p>
+    </div>
+    <form class="coordinate__form">
+      <input type="text" pattern="^\[?-?\d{1,2}\.\d{5},\s?-?\d{1,2}\.\d{5}\]?$" class="coordinate__input">
+    </form>
   </div>
 </body>
 </html>
